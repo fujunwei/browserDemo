@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <dimen name="title_bottom_height">55dp</dimen>
+      <dimen name="title_bottom_height_1">63dp</dimen>
+    <!-- 6.0 -->
+    <dimen name="popmenu_h">230.0dip</dimen>  
+    <dimen name="flowpopmenu_h">170.0dip</dimen> 
+      
+    <!-- 列表item -->
+    <dimen name="list_item_dimens_0">1dip</dimen>
+    <dimen name="list_item_dimens">8dip</dimen>
+    <dimen name="list_item_dimens_1">2dip</dimen>
+    <dimen name="list_item_dimens_2">15dip</dimen>
+    <dimen name="list_item_dimens_3">5dip</dimen>
+    <dimen name="list_item_dimens_app_desc_textsize">14sp</dimen>
+    <dimen name="list_item_dimens_app_size_textsize">13sp</dimen>
+    <dimen name="list_item_dimens_app_name_textsize">18sp</dimen>
+    <dimen name="list_item_dimens_download_button_width">60dp</dimen>
+    <dimen name="list_item_dimens_download_button_height">25dip</dimen>
+    <dimen name="list_item_dimens_purepic_bottom_height">50dp</dimen>
+    <dimen name="list_item_dimens_flow_bigpic_bottom_height">64dp</dimen>
+    <dimen name="progressbar_text_size">13sp</dimen>
+    <dimen name="progressbar_height">3dp</dimen>
+    <dimen name="list_item_margin_lr_dimens">5dip</dimen>
+    <dimen name="list_item_height_dimens">110dip</dimen>
+    <dimen name="list_item_height_dimens2">95dip</dimen>
+    <dimen name="list_item_height_dimens3">60dip</dimen>
+    <dimen name="list_image_height_dimens">70dip</dimen>
+    <dimen name="list_image_height_dimens4">50dip</dimen>
+    <dimen name="list_image_height_dimens1">41dip</dimen>
+    <!-- 头部导航栏标题布局距离两边的缺损值 30dip + 10dp + 10dp +30dp+10dp+10dp -->
+    <dimen name="head_bar_title_magin">90dip</dimen>
+    <dimen name="head_bar_title_left_magin">55dip</dimen>
+    <dimen name="head_bar_title_right_magin">55dip</dimen>
+    <dimen name="head_bar_title_default_magin">10dip</dimen>
+    <dimen name="head_bar_height">50dip</dimen>
+    <dimen name="head_bar_icon_height">30dip</dimen>
+    
+    <dimen name="page_point_with">18dip</dimen>
+    <dimen name="page_point_height">3dip</dimen>
+    <dimen name="page_point_margin">3dip</dimen>
+    <dimen name="page_point_margin_top">6dip</dimen>
+    
+    <!-- 秒传使用的图标和间距大小 -->
+	<dimen name="gallery_item_width">40dip</dimen>
+	<dimen name="fsend_gallery_spacing">7dip</dimen>
+	<dimen name="fsend_users_layout_left">57dip</dimen>
+    <dimen name="fsend_users_layout_right">55dip</dimen>
+    <dimen name="fsend_app_item">50dip</dimen>
+    
+    <!--     按钮的大小 -->
+    <dimen name="button_width">170dip</dimen>
+    <dimen name="button_height">45dip</dimen>
+    <dimen name="dialog_button_width">90dip</dimen>
+    <dimen name="dialog_button_height">35dip</dimen>
+    
+    <!-- 应用列表   应用名称的文本字体大小 -->
+    <dimen name="app_listview_name_textview_size">14dp</dimen>
+    <!-- 应用列表   应用种类category的文本字体大小 -->
+    <dimen name="app_listview_category_textview_size">13dp</dimen>
+    <!-- 应用列表   下载按钮的文本字体大小 -->
+    <dimen name="app_listview_download_textview_size">15dip</dimen>
+    
+    <dimen name="title_textview_size">16dp</dimen>
+    <dimen name="flowpan_textview_size">18sp</dimen>
+    <dimen name="flowplan_text_view_size">16dip</dimen>
+    <dimen name="search_hot_word">16dip</dimen>
+    <dimen name="search_app_item">93dip</dimen>
+    <dimen name="search_app_icon">65dip</dimen>
+    <dimen name="search_hot_word_size">16dp</dimen>
+    <dimen name="search_hot_word_height">30dp</dimen>
+    <dimen name="search_hot_word_category">18dp</dimen>
+    
+    <dimen name="first_necessary_title_size">12dp</dimen>
+    <dimen name="first_necessary_app_width">65dp</dimen>
+    <dimen name="search_category_name">45dp</dimen>
+    
+    <dimen name="title_dis">110dp</dimen>
+    <dimen name="title_dis_new">123dp</dimen>
+    
+    <dimen name="video_grid_width_default">30dp</dimen>
+    <dimen name="sldingmenu_20_dip">20dp</dimen>
+    <dimen name="sldingmenu_10_dip">10dp</dimen>
+    <dimen name="sldingmenu_45_dip">44dp</dimen>
+    <dimen name="float_memory_percent_size">12dp</dimen>
+    <dimen name="float_memory_text_size">30dp</dimen>
+    
+    <dimen name="mobile_life_width">8dp</dimen>
+    <dimen name="mobile_life_height">140dp</dimen>
+
+    <dimen name="flow_manager_padding">25dp</dimen>
+    <dimen name="flow_manager_padding_top">20dp</dimen>
+    
+    <!-- 引导图的偏移量-->
+    <dimen name="operator_guide_offset_y">86dp</dimen>
+    <!-- 引导图标的宽和高 -->
+    <dimen name="operator_guide_img_width">150dp</dimen>
+    <dimen name="operator_guide_img_height">75dp</dimen>
+    <!-- 抢流量点击的区域宽和高-->
+    <dimen name="rob_flow_click_area_width">100dp</dimen>
+    <dimen name="rob_flow_click_area_height">40dp</dimen>
+    <!-- 流量助手点击的区域宽和高-->
+    <dimen name="flow_aid_area_width">80dp</dimen>
+    <dimen name="flow_aid_area_height">50dp</dimen>
+    <!-- 流量助手引导图X方向偏移距离-->
+    <dimen name="flow_aid_guide_offset_x">50dp</dimen>
+     <!-- 对话框的X方向偏移-->
+    <dimen name="dialog_offset_x">15dp</dimen>
+    
+    <dimen name="flow_top_height">45dp</dimen>
+    
+    <dimen name="flow_selector_bar">35dp</dimen>
+    <!-- 壁纸下载进度条中的文字大小-->
+    <dimen name="wallpaper_download_progress">18dp</dimen>
+    
+    <dimen name="flow_report_new_layout_viewpager_height">220dp</dimen>
+    <!-- 礼包模式字体大小 -->
+    <dimen name="gift_text_size">13sp</dimen>
+    <dimen name="vpn_center_btn_img_height">164dp</dimen>
+    
+    <!-- 横向布局模式每个item的高度 -->
+    <dimen name="list_item_at_hor_layout_list_apps_height">150dp</dimen>
+    <!-- 每个横向布局的ListView的左边距 -->
+    <dimen name="list_item_at_hor_layout_padding_left">10dip</dimen>
+    <!-- 每个横向布局的ListView的右边距 -->
+     <dimen name="list_item_at_hor_layout_padding_right">10dip</dimen>
+     
+    <!-- 小banner模式的每个item项高度和边距
+    	备注:这边AutoLoadListAdapter和**用同这边的属性
+     -->
+    <dimen name="list_item_at_hor_layout_small_banner_padding_right">15dip</dimen>
+    <dimen name="list_item_at_hor_layout_small_banner_padding_left">15dip</dimen>
+    
+    <dimen name="list_item_at_hor_layout_small_banner_item_height">95dip</dimen>
+    <dimen name="list_item_at_hor_layout_small_banner_height">65dip</dimen>
+    <dimen name="list_item_at_hor_layout_small_banner_width">157dip</dimen>
+    
+    <!-- wechat_dialog.xml -->
+     <dimen name="wechat_one_tip_height">100dp</dimen>
+     <dimen name="wechat_one_tip_margin">10dip</dimen>
+     <dimen name="wechat_one_tip_paddingLeft">5dp</dimen>
+     <dimen name="wechat_one_tip_textSize">16sp</dimen>
+     <dimen name="wechat_view_height">0.5dp</dimen>
+     <dimen name="linearLayout_height">60dp</dimen>
+     <dimen name="wechat_passcancel_width">0dp</dimen>
+     <dimen name="wechat_passcancel_textSize">16sp</dimen>
+     <dimen name="view_width">0.5dp</dimen>
+      <dimen name="wechat_password_ob_width">0dp</dimen>
+     <dimen name="wechat_password_ob_textSize">16sp</dimen>
+</resources>

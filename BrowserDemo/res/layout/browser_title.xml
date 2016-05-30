@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/BarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/v60_new_webview_top_bg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/userBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="25dp"
+            android:text="开启代理"
+            android:textColor="@color/white" >
+        </Button>
+
+        <ImageView
+            android:id="@+id/first_split"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/userBtn"
+            android:background="@drawable/v60_new_webview_top_horizontal_split" />
+
+        <TextView
+            android:id="@+id/UrlText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/browser_title_bg_shape"
+            android:singleLine="true"
+            android:text="@string/flow_unusing"
+            android:textColor="@color/white"
+            android:textSize="15sp" >
+        </TextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/searchEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/iv_search"
+            android:background="@drawable/v60_new_webview_top_address_margin_bg"
+            android:drawableLeft="@drawable/v60_new_webview_findinpage_icon"
+            android:drawablePadding="5dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="输入网址或关键词"
+            android:imeOptions="actionGo"
+            android:inputType="textUri"
+            android:paddingRight="30dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/second_split"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/addBtn"
+            android:background="@drawable/v60_new_webview_top_horizontal_split" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@null"
+            android:text="关闭代理"
+            android:textColor="@color/white"
+            android:textSize="15sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/v60_new_webview_top_search_bg"
+            android:gravity="center"
+            android:text="@string/alert_cancel"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/v60_new_webview_top_search_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/v60_new_webview_top_search"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_clear"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignRight="@+id/searchEditText"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:src="@drawable/v60_new_webview_top_address_clear_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/findLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/v60_new_webview_top_bg"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/deleteFindBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/v60_new_webview_top_close_address" >
+        </Button>
+
+        <EditText
+            android:id="@+id/findEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/find_next"
+            android:layout_toRightOf="@+id/deleteFindBtn"
+            android:background="@drawable/v60_new_webview_top_address_margin_bg"
+            android:drawableLeft="@drawable/v60_new_webview_findinpage_icon"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:hint="页面查找"
+            android:imeOptions="actionGo"
+            android:inputType="textUri"
+            android:longClickable="true"
+            android:paddingRight="30dp"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/find_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@+id/find_last"
+            android:background="@drawable/button"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:src="@drawable/v60_new_webview_findinpage_go2next" />
+
+        <ImageButton
+            android:id="@+id/find_last"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/v60_new_webview_findinpage_go2last" />
+    </RelativeLayout>
+
+</LinearLayout>

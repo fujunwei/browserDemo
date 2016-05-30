@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- vpn预订购流程按钮颜色值 -->
+    <color name="btn_text_select_4_vpn_pre_order_normal">#0091ea</color>
+    <color name="btn_text_select_4_vpn_pre_order_pressed">#FFFFFF</color>
+    <drawable name="white_background">#FFFFffff</drawable>
+    <drawable name="alpha_00">#00000000</drawable>
+    <drawable name="game_item_background">#9dda3e</drawable>
+    <drawable name="toplist_color">#279531</drawable>
+    <color name="default_bar_title_color">#0091ea</color>
+    <color name="default_download_finish_color">#80c269</color>
+    <color name="default_unable_color">#79bde6</color>
+    <color name="main_top_color">#0091ea</color>
+    <color name="background">#ebebeb</color>
+    <color name="flow_remainder_title_bar_bg">#306e00</color>
+    <color name="flow_remainder_title_bar_bg2">#FE5821</color>
+    <color name="gray_text_color">#aaaaaa</color>
+    <color name="split_color">#DCDADB</color>
+    <color name="shadow_line_color">#e5e5e5</color>
+    <color name="shadow_line_color_deeper">#cdcdcd</color>
+    <color name="alpha_00">#00000000</color>
+    <color name="alpha_half_1">#40000000</color>
+    <color name="alpha_half">#80000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="base_org_color">#FE5821</color>
+    <color name="org_1_color">#f86e00</color>
+    <color name="org_2_color">#FE5722</color>
+    <color name="org_color">#FE7000</color>
+    <color name="lightwhite">#ddd</color>
+    <color name="white">#fff</color>
+    <color name="white_gray">#fafafa</color>
+    <color name="bottom_unclick_color">#2B2B2B</color>
+    <color name="bottom_clicked_color">#CC000000</color>
+    <color name="simple_color">#cc7799</color>
+    <color name="foot_text_unselect">#C5C5C5</color>
+    <color name="bottom_layout_color">#f0f0f0</color>
+    <color name="text_color_black">#ff000000</color>
+    <color name="text_color_black_update">#ff000000</color>
+    <color name="dialog_load_text">#FF8a8989</color>
+    <color name="brandgriditem_textcolor">#FFFFFF</color>
+    <color name="notification_text_color">#F5F5F5</color>
+    <color name="wowhite">#FFF0F0F0</color>
+    <color name="transparent_background">#00000000</color>
+      <color name="half_transparent_white">#77ffffff</color>
+    <color name="app_listview_name_textview_color">#454545</color>
+    <color name="app_listview_category_textview_color">#888888</color>
+    <color name="app_sort_download_textcolor">#ffffff</color>
+    <color name="fullscreen_loading_indicator_textcolor">#7a7a7a</color>
+    <color name="appdetail_sort_download_textcolor">#fff99d1c</color>
+    <!-- 每天弹出精品推荐框标题和描述背景色 -->
+    <color name="everyday_recommend_title_des">#0FADD8</color>
+    <color name="title_color1">#ffffff</color>
+    <color name="detail_black_color">#cdcdcd</color>
+    <color name="title_color">#333333</color>
+    <!-- 流量套餐中的宣传语字体颜色 的设定 -->
+    <color name="flowpan_describe_moreinfo">#f68b1f</color>
+    <color name="flowpan_describe_textview">#7f7f7f</color>
+    <color name="flowpan_describe">#d0794e</color>
+    <color name="upgrade_notificationcharacter_textcolor">#555555</color>
+    <color name="status_text">#FFFFFFFF</color>
+    <color name="search_layout_textcolor">#FFFFfe</color>
+    <color name="wostoretextcolor">#000000</color>
+    <color name="edittext_hint_color">#bbbbbb</color>
+    <color name="serch_null_color1">#6e6e6e</color>
+    <color name="serch_null_color2">#6c6c6c</color>
+    <color name="Buy_button_bg_color">#f99d1c</color>
+    <color name="hot_search_item_color">#C0C0C0</color>
+    <color name="wo_sendmoney_background">#f2f2f2</color>
+    <color name="more_account_manage_textcolor">#0e2481</color>
+	<!-- 登录 -->
+	<color name="wostoreeditcolor">#969696</color>
+	<color name="more_notify_link_color">#153cba</color>
+	<color name="zrigister_color">#333333</color>
+	<color name="rigister_confirmation_edittext_number_color">#b3b3b3</color>
+	<color name="rigister_confirmation_mail_get_web_color">#e1ab08</color>
+	<!-- 	按钮的颜色，点击中的颜色 -->
+	<color name="ok_btn_unclick">#F8A91E</color>
+	<color name="ok_btn_click">#F07322</color>
+	<color name="cancel_btn_unclick">#686868</color>
+	<color name="cancel_btn_click">#505050</color>
+	
+	<!-- 文字颜色 -->
+	<color name="textColor_selected">#CBCBCB</color>
+	<color name="textColor_unselected">#7F7F7F</color>
+	<color name="textcolor_grey_light">#BDBDBD</color>
+	<color name="textcolor_grey_dark">#7E7E7E</color>
+	<color name="textcolor_brown">#7F2D12</color>
+	<color name="textcolor_red">#FC6E19</color>
+	<color name="textcolor_gray">#666666</color>
+	<color name="textcolor_blue_1">#9fdbff</color>
+	
+	<color name="app_tag1_selected">#d98100</color>
+	<color name="app_tag1_unselected">#ff9800</color>
+	<color name="app_tag2_selected">#0390d0</color>
+	<color name="app_tag2_unselected">#03a9f4</color>
+	<color name="app_tag3_selected">#76a63f</color>
+	<color name="app_tag3_unselected">#8bc34a</color>
+	<color name="app_tag4_selected">#852196</color>
+	<color name="app_tag4_unselected">#9c27b0</color>
+	
+	<color name="game_tag1_selected">#77a640</color>
+	<color name="game_tag1_unselected">#8cc34b</color>
+	<color name="game_tag2_selected">#cf4f30</color>
+	<color name="game_tag2_unselected">#f35d38</color>
+	<color name="game_tag3_selected">#d5b003</color>
+	<color name="game_tag3_unselected">#facf04</color>
+	<color name="game_tag4_selected">#00a0b5</color>
+	<color name="game_tag4_unselected">#00bcd5</color>
+
+	<color name="flow_default_color">#333333</color>
+	
+	<color name="txt_yellow">#ffff00</color>
+	<color name="black_gray">#1e1e1e</color>
+	<!-- 礼包模式绿色字体 -->
+	<color name="gift_green">#80c269</color>
+	<color name="gift_default_color">#EFEFEF</color>
+	<!-- vpn预订购流程按钮颜色值 -->
+    <color name="reboot_prompt_dialog_bg">#FFF000</color>
+    
+    <!-- 浏览器 -->
+	<color name="favorites_textcolor">#666666</color>
+	<color name="favorites_divider">#D2D2D2</color>
+	
+	<color name="search_bg">#0569BF</color>
+    <!-- webview的进度条 -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+</resources>

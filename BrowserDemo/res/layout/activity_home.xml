@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/test"
+    android:background="#f5f5f5" >
+
+    <include
+        android:id="@+id/main_title"
+        layout="@layout/browser_title" />
+
+    <ProgressBar
+        android:id="@+id/WebViewProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5px"
+        android:layout_alignBottom="@+id/main_title"
+        android:layout_marginBottom="1px"
+        android:progressDrawable="@drawable/progress" />
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/BottomBarLayout"
+        android:layout_below="@+id/WebViewProgress" >
+
+        <LinearLayout
+            android:id="@+id/activity_home_webview_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible" >
+        </LinearLayout>
+
+        <include
+            android:id="@+id/error"
+            layout="@layout/online_error"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/app_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@style/loadingGirlStyle"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:visibility="gone" >
+        </ProgressBar>
+
+        <ImageView
+            android:id="@+id/app_progress_1"
+            android:layout_width="27dip"
+            android:layout_height="27dip"
+            android:src="@drawable/progress_spinner_orange"
+            android:visibility="visible" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/app_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:text="努力加载中..."
+            android:textColor="#737373"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/BottomBarLayout"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:id="@+id/BottomBarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/v60_new_webview_bottom_bg"
+        android:weightSum="5" >
+
+        <RelativeLayout
+            android:id="@+id/PreviousBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="13dip" >
+
+            <ImageView
+                android:id="@+id/previous_iv"
+                android:layout_width="21dip"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/v60_bottom_page_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/NextBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="13dip" >
+
+            <ImageView
+                android:id="@+id/next_iv"
+                android:layout_width="21dip"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/v60_bottom_page_forward" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ToolMenuBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="13dip" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/v60_bottom_option" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/NewTabBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="13dip" >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/v60_bottom_multiwindow" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="1"
+                android:textColor="@color/gray_text_color"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/returnHomeTabBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="13dip" >
+
+            <ImageView
+                android:id="@+id/home_iv"
+                android:layout_width="20dp"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/v60_bottom_home" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

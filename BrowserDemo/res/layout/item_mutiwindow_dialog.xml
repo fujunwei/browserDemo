@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/item_mutiwindow_dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp" >
+
+        <ImageView
+            android:id="@+id/item_mutiwindow_dialog_tabIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_mutiwindow_dialog_tabTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/item_mutiwindow_dialog_tabIcon"
+            android:singleLine="true"
+            android:textColor="#929292"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_mutiwindow_dialog_tabUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_mutiwindow_dialog_tabTitle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="35dp"
+            android:layout_toRightOf="@+id/item_mutiwindow_dialog_tabIcon"
+            android:singleLine="true"
+            android:textColor="#929292"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/item_mutiwindow_dialog_removeTab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:padding="6dp"
+            android:src="@drawable/v60_new_webview_bookmark_close"
+            android:textSize="23sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#888888" />
+    </RelativeLayout>
+
+</RelativeLayout>
