@@ -92,11 +92,11 @@ public class XWalkExoMediaPlayer extends XWalkExMediaPlayer implements SurfaceHo
     private int mVideoHeight;
     Map<String, String> mHeaders;
 
-    public XWalkExoMediaPlayer(Context context, XWalkView xWalkView) {
+    public XWalkExoMediaPlayer(Context context, XWalkView xWalkView, SurfaceView surfaceview) {
         mContext = context;
         mXWalkView = xWalkView;
         mediaController = new KeyCompatibleMediaController(context);
-        mSurfaceView = new SurfaceView(context);
+        mSurfaceView = surfaceview;//new SurfaceView(context);
         mCustomFullscreen = false;
     }
 
@@ -475,14 +475,14 @@ public class XWalkExoMediaPlayer extends XWalkExMediaPlayer implements SurfaceHo
         if (activity != null) {
             activity.onFullscreenToggled(true);
         }
-        FrameLayout decor = (FrameLayout) activity.getWindow().getDecorView();
-        decor.addView(view, 0,
-                new FrameLayout.LayoutParams(
-                        ViewGroup.LayoutParams.MATCH_PARENT,
-                        ViewGroup.LayoutParams.MATCH_PARENT,
-                        Gravity.CENTER));
+//        FrameLayout decor = (FrameLayout) activity.getWindow().getDecorView();
+//        decor.addView(view, 0,
+//                new FrameLayout.LayoutParams(
+//                        ViewGroup.LayoutParams.MATCH_PARENT,
+//                        ViewGroup.LayoutParams.MATCH_PARENT,
+//                        Gravity.CENTER));
 
-        decor.setOnTouchListener(new View.OnTouchListener() {
+        view.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
@@ -493,7 +493,7 @@ public class XWalkExoMediaPlayer extends XWalkExMediaPlayer implements SurfaceHo
                 return true;
             }
         });
-        decor.setOnKeyListener(new View.OnKeyListener() {
+        view.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if (keyCode == KeyEvent.KEYCODE_BACK || keyCode == KeyEvent.KEYCODE_ESCAPE
@@ -503,7 +503,7 @@ public class XWalkExoMediaPlayer extends XWalkExMediaPlayer implements SurfaceHo
                 return mediaController.dispatchKeyEvent(event);
             }
         });
-        mediaController.setAnchorView(decor);
+        mediaController.setAnchorView(view);
 
         return activity;
     }
@@ -548,8 +548,8 @@ public class XWalkExoMediaPlayer extends XWalkExMediaPlayer implements SurfaceHo
             }
 
             // Remove video view from activity's ContentView.
-            FrameLayout decor = (FrameLayout) activity.getWindow().getDecorView();
-            decor.removeView(mSurfaceView);
+//            FrameLayout decor = (FrameLayout) activity.getWindow().getDecorView();
+//            decor.removeView(mSurfaceView);
 
             if (mPreOrientation != INVALID_ORIENTATION &&
                     mPreOrientation >= ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED &&
@@ -557,9 +557,10 @@ public class XWalkExoMediaPlayer extends XWalkExMediaPlayer implements SurfaceHo
                 activity.setRequestedOrientation(mPreOrientation);
                 mPreOrientation = INVALID_ORIENTATION;
             }
-
-            decor.setOnClickListener(null);
-            decor.setOnTouchListener(null);
+            
+            mSurfaceView.setVisibility(View.INVISIBLE);
+//            mSurfaceView.setOnClickListener(null);
+//            mSurfaceView.setOnTouchListener(null);
             mediaController.hide();
             mCustomFullscreen = false;
 //        player.setSurface(xwalkSurface);

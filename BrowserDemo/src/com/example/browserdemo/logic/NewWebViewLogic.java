@@ -25,6 +25,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
+import android.view.SurfaceView;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.webkit.CookieManager;
@@ -83,6 +84,7 @@ public class NewWebViewLogic {
 	private Context mContext;
 
 	private View rootView;
+	private SurfaceView surfaceView;
 
 	/**
 	 * 打点标记
@@ -502,7 +504,8 @@ public class NewWebViewLogic {
 		}
 		webview.proxySettingsChanged(proxy, proxyPort, "", a);
 
-		mXWalkExoMediaPlayer = new XWalkExoMediaPlayer(mContext, webview);
+		surfaceView = (SurfaceView) rootView.findViewById(R.id.surface_view);
+		mXWalkExoMediaPlayer = new XWalkExoMediaPlayer(mContext, webview, surfaceView);
 		mXWalkExoMediaPlayer.updateProxySetting(proxy, proxyPort);
 		webview.setExMediaPlayer(mXWalkExoMediaPlayer);
 

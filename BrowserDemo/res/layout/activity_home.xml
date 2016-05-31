@@ -25,6 +25,11 @@
         android:layout_above="@+id/BottomBarLayout"
         android:layout_below="@+id/WebViewProgress" >
 
+        <SurfaceView android:id="@+id/surface_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center"/>
+        
         <LinearLayout
             android:id="@+id/activity_home_webview_container"
             android:layout_width="match_parent"
